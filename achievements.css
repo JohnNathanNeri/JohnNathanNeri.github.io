@@ -1,5 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap");
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.description1,
+.description2,
+.description3,
+.img1,
+.img2,
+.img3 {
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+/* Apply different animation delays to each element */
+.description1,
+.img1 {
+  animation-delay: 0.1s;
+}
+
+.description2,
+.img2 {
+  animation-delay: 0.3s;
+}
+
+.description3,
+.img3 {
+  animation-delay: 0.5s;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -31,6 +68,8 @@ body {
 
 h1 {
   color: white;
+  font-size: xx-large;
+  font-weight: bolder;
 }
 
 p {
@@ -100,4 +139,5 @@ img {
   text-decoration: none;
   color: white;
   font-size: large;
+  margin-bottom: 30px;
 }
